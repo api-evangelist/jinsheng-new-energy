@@ -1,0 +1,43 @@
+generated: '2026-08-23'
+method: probed
+source: live HTTP probes of the Jinsheng New Energy corporate hosts (www.zqjs.cn, en.zqjs.cn)
+note: >-
+  Recorded absence. Every canonical /.well-known/ path was probed on both company hosts
+  and none returned a document. www.zqjs.cn answers a real 404 for every path. en.zqjs.cn
+  answers 403 to our crawler for several paths (an edge policy on the English mirror, not
+  a served document) and 404 for the rest. No WellKnown or SecurityTxt pointer is emitted
+  in apis.yml, because nothing here is served — this file documents an absence, not a
+  presence.
+hosts:
+- host: www.zqjs.cn
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: en.zqjs.cn
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404

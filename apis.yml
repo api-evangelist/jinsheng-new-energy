@@ -1,8 +1,22 @@
 aid: jinsheng-new-energy
 name: Jinsheng New Energy
-description: 'Jinsheng New Energy is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Guangdong Jinsheng New Energy Co., Ltd. (广东金晟新能源股份有限公司) is a Chinese
+  lithium-battery recycling and materials company headquartered in Zhaoqing, Guangdong,
+  founded in 2010 and originally focused on nickel sulfate production. It operates a
+  closed-loop "urban mine" business: harmless treatment, echelon (second-life) use and
+  hydrometallurgical regeneration of retired lithium-ion batteries into battery-grade
+  nickel sulfate, cobalt sulfate, manganese sulfate and lithium carbonate, plus ternary
+  and iron-phosphate precursors and LFP cathode material, and downstream cells for light
+  mobility, commercial and industrial storage, outdoor power stations and solar street
+  lighting. Production is split across Zhaoqing (Gaoyao) in Guangdong and Yichun/Ganzhou
+  in Jiangxi through the wholly owned subsidiary Jiangxi Ruida New Energy Technology, with
+  approved processing capacity of about 204,000 tonnes of spent lithium battery per year.
+  Both the parent and Jiangxi Ruida appear on MIIT''s echelon-use and regeneration white
+  lists. The company completed a Series C, is a Hurun and Forbes unicorn-list member, and
+  has pursued a public listing. It is an industrial materials manufacturer and publishes
+  no developer program, API, or machine-readable API contract of any kind.'
 url: https://raw.githubusercontent.com/api-evangelist/jinsheng-new-energy/refs/heads/main/apis.yml
+image: https://www.zqjs.cn/upload/sysconfigs/2024-03/6602168302365.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +26,16 @@ created: '2026-08-23'
 modified: '2026-08-23'
 tags:
 - Company
+- Energy
+- Batteries
+- Lithium-ion
+- Recycling
+- Circular Economy
+- Materials
+- Manufacturing
+- Electric Vehicles
+- Energy Storage
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +43,45 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/jinsheng-new-energy-domain-security.yml
 - type: Website
+  url: https://www.zqjs.cn/
+- type: About
+  url: https://www.zqjs.cn/about.html
+- type: Products
+  url: https://www.zqjs.cn/product.html
+- type: News
+  url: https://www.zqjs.cn/news.html
+- type: Contact
+  url: https://www.zqjs.cn/contact.html
+- type: SecondaryMarketListing
   url: https://www.hiive.com/securities/jinsheng-new-energy-stock
+x-enrichment:
+  date: '2026-08-23'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Jinsheng New Energy is a lithium-battery recycling and cathode-materials manufacturer;
+    its only web property is a Chinese corporate CMS site (about / products / news /
+    contact, no developer section), and every REST, GraphQL, MCP and A2A discovery path
+    probed on www.zqjs.cn returned the same 3,679-byte CMS catch-all HTML page rather than
+    a spec.
+  evidence:
+    - url: https://www.zqjs.cn/openapi.json
+      status: 200
+    - url: https://www.zqjs.cn/swagger.json
+      status: 200
+    - url: https://www.zqjs.cn/graphql
+      status: 200
+    - url: https://www.zqjs.cn/.well-known/agent-card.json
+      status: 404
+    - url: https://www.zqjs.cn/.well-known/api-catalog
+      status: 404
+    - url: https://en.zqjs.cn/
+      status: 403
+  checked: '2026-08-23'

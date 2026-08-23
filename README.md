@@ -64,5 +64,34 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Jinsheng New Energy is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
+Guangdong Jinsheng New Energy Co., Ltd. (广东金晟新能源股份有限公司) is a Chinese lithium-battery
+recycling and cathode-materials company headquartered in Zhaoqing, Guangdong. Founded in 2010 as a
+nickel sulfate producer, it now runs a closed-loop "urban mine" business — harmless treatment,
+echelon (second-life) use and hydrometallurgical regeneration of retired lithium-ion batteries into
+battery-grade nickel sulfate, cobalt sulfate, manganese sulfate and lithium carbonate, plus ternary
+and iron-phosphate precursors, LFP cathode material, and downstream cells for light mobility,
+commercial and industrial storage, outdoor power stations and solar street lighting. Production runs
+from Zhaoqing (Gaoyao) in Guangdong and Yichun/Ganzhou in Jiangxi via the wholly owned subsidiary
+Jiangxi Ruida New Energy Technology, with approved capacity of roughly 204,000 t/yr of spent
+lithium battery.
+
+## API surface
+
+**None found.** Jinsheng New Energy is an industrial materials manufacturer with no developer
+program. Its public web presence is a corporate CMS site (about / products / news / contact) at
+[www.zqjs.cn](https://www.zqjs.cn/). Full contract discovery was run on 2026-08-23 against both
+company hosts — REST spec paths (`/openapi.json`, `/openapi.yaml`, `/swagger.json`,
+`/v1/openapi.json`, `/api-docs`, `/docs`, `/redoc`), a GraphQL introspection surface, every
+canonical `/.well-known/` document, and both A2A agent-card paths — and nothing was served. Every
+`200` on `www.zqjs.cn` is the same 3,679-byte CMS catch-all page, i.e. a soft 404, not a spec. No
+GitHub organization exists for the company.
+
+What this repo does hold is a probed record of that absence, plus the company's real domain
+security posture:
+
+- `security/jinsheng-new-energy-domain-security.yml` — TLS 1.3, HSTS (max-age 31536000), DNSSEC
+  enabled on `zqjs.cn`; no CAA, SPF or DMARC records.
+- `well-known/jinsheng-new-energy-well-known.yml` — the `/.well-known/` probe, all misses.
+
+- https://www.zqjs.cn/
 - https://www.hiive.com/securities/jinsheng-new-energy-stock
