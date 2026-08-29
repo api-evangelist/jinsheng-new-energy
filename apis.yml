@@ -16,6 +16,17 @@ description: 'Guangdong Jinsheng New Energy Co., Ltd. (广东金晟新能源股�
   has pursued a public listing. It is an industrial materials manufacturer and publishes
   no developer program, API, or machine-readable API contract of any kind.'
 url: https://raw.githubusercontent.com/api-evangelist/jinsheng-new-energy/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://www.zqjs.cn/upload/sysconfigs/2024-03/6602168302365.png
 x-type: company
 x-source: harvest:secondary-market
