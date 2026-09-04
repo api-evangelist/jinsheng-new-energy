@@ -27,6 +27,18 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://www.zqjs.cn/upload/sysconfigs/2024-03/6602168302365.png
 x-type: company
 x-source: harvest:secondary-market
