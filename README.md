@@ -64,34 +64,80 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Guangdong Jinsheng New Energy Co., Ltd. (广东金晟新能源股份有限公司) is a Chinese lithium-battery
-recycling and cathode-materials company headquartered in Zhaoqing, Guangdong. Founded in 2010 as a
-nickel sulfate producer, it now runs a closed-loop "urban mine" business — harmless treatment,
-echelon (second-life) use and hydrometallurgical regeneration of retired lithium-ion batteries into
-battery-grade nickel sulfate, cobalt sulfate, manganese sulfate and lithium carbonate, plus ternary
-and iron-phosphate precursors, LFP cathode material, and downstream cells for light mobility,
-commercial and industrial storage, outdoor power stations and solar street lighting. Production runs
-from Zhaoqing (Gaoyao) in Guangdong and Yichun/Ganzhou in Jiangxi via the wholly owned subsidiary
-Jiangxi Ruida New Energy Technology, with approved capacity of roughly 204,000 t/yr of spent
-lithium battery.
+Guangdong Jinsheng New Energy Co., Ltd. (广东金晟新能源股份有限公司) is a Chinese lithium-battery recycling and materials company headquartered in Zhaoqing, Guangdong, founded in 2010 and originally focused on nickel sulfate production. It operates a closed-loop "urban mine" business: harmless treatment, echelon (second-life) use and hydrometallurgical regeneration of retired lithium-ion batteries into battery-grade nickel sulfate, cobalt sulfate, manganese sulfate and lithium carbonate, plus ternary and iron-phosphate precursors and LFP cathode material, and downstream cells for light mobility, commercial and industrial storage, outdoor power stations and solar street lighting. Production is split across Zhaoqing (Gaoyao) in Guangdong and Yichun/Ganzhou in Jiangxi through the wholly owned subsidiary Jiangxi Ruida New Energy Technology, with approved processing capacity of about 204,000 tonnes of spent lithium battery per year. Both the parent and Jiangxi Ruida appear on MIIT's echelon-use and regeneration white lists. The company completed a Series C, is a Hurun and Forbes unicorn-list member, and has pursued a public listing. It is an industrial materials manufacturer and publishes no developer program, API, or machine-readable API contract of any kind.
 
-## API surface
+**Areas:** Company · Energy · Batteries · Lithium-Ion · Recycling · Circular Economy · Materials · Manufacturing · Electric Vehicles · Energy Storage · China
 
-**None found.** Jinsheng New Energy is an industrial materials manufacturer with no developer
-program. Its public web presence is a corporate CMS site (about / products / news / contact) at
-[www.zqjs.cn](https://www.zqjs.cn/). Full contract discovery was run on 2026-08-23 against both
-company hosts — REST spec paths (`/openapi.json`, `/openapi.yaml`, `/swagger.json`,
-`/v1/openapi.json`, `/api-docs`, `/docs`, `/redoc`), a GraphQL introspection surface, every
-canonical `/.well-known/` document, and both A2A agent-card paths — and nothing was served. Every
-`200` on `www.zqjs.cn` is the same 3,679-byte CMS catch-all page, i.e. a soft 404, not a spec. No
-GitHub organization exists for the company.
+## Jinsheng New Energy on APIs.io
 
-What this repo does hold is a probed record of that absence, plus the company's real domain
-security posture:
+Everything profiled for Jinsheng New Energy is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/jinsheng-new-energy/](https://apis.io/providers/jinsheng-new-energy/)** — or go straight to one of the APIs or properties below.
 
-- `security/jinsheng-new-energy-domain-security.yml` — TLS 1.3, HSTS (max-age 31536000), DNSSEC
-  enabled on `zqjs.cn`; no CAA, SPF or DMARC records.
-- `well-known/jinsheng-new-energy-well-known.yml` — the `/.well-known/` probe, all misses.
+### Published properties
 
-- https://www.zqjs.cn/
-- https://www.hiive.com/securities/jinsheng-new-energy-stock
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Jinsheng New Energy Domain Security](https://apis.io/security/jinsheng-new-energy/jinsheng-new-energy-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.zqjs.cn/)
+- [Blog](https://www.zqjs.cn/news/)
+
+## API Evangelist rating
+
+**Kin Score 4.1** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 49.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.9** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/jinsheng-new-energy/](https://apis.io/providers/jinsheng-new-energy/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Jinsheng New Energy: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/jinsheng-new-energy/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
